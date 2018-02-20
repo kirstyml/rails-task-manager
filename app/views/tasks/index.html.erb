@@ -8,7 +8,7 @@
       <% end %>
     </div>
     <%= link_to task.title, task_path(task) %>
-    <%= link_to task_path(task), method: :delete, class: "delete_icon" do %>
+    <%= link_to task_path(task), method: :delete, data: { confirm: "Are you sure you want to delete this task?"}, class: "delete_icon" do %>
     <i class="far fa-trash-alt delete"></i>
     <% end %>
   </div>
@@ -18,10 +18,10 @@
   <%= link_to "Create task", tasks_new_path %>
 </div>
 
-<script>
+<!-- <script>
   document.querySelectorAll(".delete_icon").forEach((delete_icon) => {
       delete_icon.addEventListener("click", (event) => {
       window.confirm("Do you really want to delete this message?");
     });
   });
-</script>
+</script> -->
