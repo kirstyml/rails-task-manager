@@ -1,0 +1,93 @@
+// Place all the styles related to the Tasks controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+h1 {
+  font-family: helvetica;
+  font-size: 32px;
+  font-weight: regular;
+}
+
+p {
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+form {
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: lighter;
+}
+
+a {
+  font-family: helvetica;
+  font-size: 18px;
+  font-weight: lighter;
+  margin: 0;
+  text-decoration: none;
+  color: RGBA(26, 119, 174, 1.00);
+}
+
+a:hover {
+  color: RGBA(26, 119, 174, 0.4);
+}
+
+.completed {
+  width: 10px;
+  height: 10px;
+  font-size: 12px;
+  border: 1px solid rgba(0,0,0,0.3);
+  margin: 10px;
+}
+
+.task {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.details {
+  padding: 20px 30px;
+  background-color: RGBA(240, 240, 240, 1.00);
+  border: 1px solid RGBA(230, 230, 230, 1.00);
+}
+
+.container {
+  width: 900px;
+  margin: 0 auto;
+}
+
+.button {
+  width: 120px;
+  height: 50px;
+  text-align: center;
+  border-radius: 2px;
+  background-color: RGBA(26, 119, 174, 1.00);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+  font-size: 16px;
+  a {
+    color: white;
+    margin: 0;
+  }
+  margin: 20px 0 ;
+}
+
+.text-input {
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  border: 1px solid RGBA(230, 230, 230, 1.00);
+  border-radius: 2px;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.delete {
+  margin: 10px;
+}

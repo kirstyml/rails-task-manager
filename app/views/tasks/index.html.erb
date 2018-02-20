@@ -1,0 +1,27 @@
+<h1>All Tasks</h1>
+
+<% @tasks.each do |task| %>
+  <div class="task">
+    <div class="completed">
+      <% if task.completed %>
+        <i class="fas fa-check"></i>
+      <% end %>
+    </div>
+    <%= link_to task.title, task_path(task) %>
+    <%= link_to task_path(task), method: :delete, class: "delete_icon" do %>
+    <i class="far fa-trash-alt delete"></i>
+    <% end %>
+  </div>
+<% end %>
+
+<div class="button">
+  <%= link_to "Create task", tasks_new_path %>
+</div>
+
+<script>
+  document.querySelectorAll(".delete_icon").forEach((delete_icon) => {
+      delete_icon.addEventListener("click", (event) => {
+      window.confirm("Do you really want to delete this message?");
+    });
+  });
+</script>
